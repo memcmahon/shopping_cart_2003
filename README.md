@@ -84,7 +84,7 @@ pry(main)> require './lib/product'
 pry(main)> require './lib/shopping_cart'
 #=> true
 
-pry(main)> cart = ShoppingCart.new("King Soopers", "30items")
+pry(main)> cart = ShoppingCart.new("King Soopers", "items30")
 
 #=> #<ShoppingCart:0x00007fccd30375f8...>
 
