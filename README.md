@@ -122,6 +122,9 @@ pry(main)> cart.is_full?
 pry(main)> cart.products_by_category(:paper)
 #=> [#<Product:0x00007fccd29b5720...>, #<Product:0x00007fccd2985f51...>]
 
+pry(main)> cart.products_by_category(:meat)
+#=> [#<Product:0x00007fccd2985f48...>]
+
 pry(main)> cart.details
 #=> {:name=> "King Soopers", :capacity=> 30}
 ```
@@ -167,7 +170,7 @@ pry(main)> product4 = Product.new(:produce, 'apples', 0.99, '20')
 pry(main)> cart.add_product(product4)
 
 pry(main)> cart.sorted_products_by_quantity
-#=> [#<Product:0x00007fccd2985f53...>, #<Product:0x00007fccd2985f51...>, #<Product:0x00007fccd2985f48...>, #<Product:0x00007fccd29b5720...>]
+#=> [#<Product:0x00007fccd2985f53...>, #<Product:0x00007fccd29b5720...>, #<Product:0x00007fccd2985f48...>, #<Product:0x00007fccd2985f51...>]
 
 pry(main)> cart.product_breakdown
 #=> {:meat=>[#<Product:0x00007fccd2985f48...>], :paper=> [#<Product:0x00007fccd29b5720...>, #<Product:0x00007fccd2985f51...>], :produce=> [#<Product:0x00007fccd2985f53...>]}
